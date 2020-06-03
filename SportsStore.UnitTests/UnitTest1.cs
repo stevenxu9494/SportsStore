@@ -1,38 +1,27 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
-using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
-using SportsStore.WebUI.Controllers;
-
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class CartTests
     {
         [TestMethod]
-        public void Can_Paginate()
+        public void Can_Add_New_Lines()
         {
-            // Arrange
-            Mock<IProductRepository> mock = new Mock<IProductRepository>();
-            mock.Setup(m => m.Products).Returns(new Product[] {
-new Product {ProductID = 1, Name = "P1"},
-new Product {ProductID = 2, Name = "P2"},
-new Product {ProductID = 3, Name = "P3"},
-new Product {ProductID = 4, Name = "P4"},
-new Product {ProductID = 5, Name = "P5"}
-});
-            ProductController controller = new ProductController(mock.Object);
-            controller.PageSize = 3;
+            // Arrange - create some test products
+            Product p1 = new Product { ProductID = 1, Name = "P1" };
+            Product p2 = new Product { ProductID = 2, Name = "P2" };
+            // Arrange - create a new cart
+            Cart target = new Cart();
             // Act
-            IEnumerable<Product> result =
-            (IEnumerable<Product>)controller.List(2).Model;
+            target.AddItem(p1, 1);
+            target.AddItem(p2, 1);
+            CartLine[] results = target.Lines.ToArray();
             // Assert
-            Product[] prodArray = result.ToArray();
-            Assert.IsTrue(prodArray.Length == 2);
-            Assert.AreEqual(prodArray[0].Name, "P4");
-            Assert.AreEqual(prodArray[1].Name, "P5");
+            Assert.AreEqual(results.Length, 2);
+            Assert.AreEqual(results[0].Product, p1);
+            Assert.AreEqual(results[1].Product, p2);
         }
     }
 }
