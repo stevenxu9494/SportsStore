@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.WebUI", "Sports
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{BCB4AE60-945A-4587-9D22-34BB657CE4BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Images", "Demo Images", "{3D2BBD9A-C44F-46BC-949B-6A6A80482ADE}"
+	ProjectSection(SolutionItems) = preProject
+		Images\SportsStoreMOHomeView.png = Images\SportsStoreMOHomeView.png
+		Images\SportsStorePCHomeView.png = Images\SportsStorePCHomeView.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
