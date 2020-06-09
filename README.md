@@ -5,7 +5,7 @@
 2. Set SportsStore.WebUI as start up project
 
 3. Start debugging<br /> 
-(Encountered Error [Could not find a part of the path 'D:\git\projectName\bin\roslyn\csc.exe']. See Steps 4 & 5.)
+(Only excute Steps 4 & 5 if you Encountered Error [Could not find a part of the path 'D:\git\projectName\bin\roslyn\csc.exe'].)
 
 4. Open Nuget Package Console -><br /> 
 PM> Uninstall-package Microsoft.CodeDom.Providers.DotNetCompilerPlatform<br /> 
