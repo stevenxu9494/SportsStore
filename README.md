@@ -4,4 +4,7 @@
 
 2. Set SportsStore.WebUI as start up project
 
-3. start debugging
+3. Start debugging
+
+
+![alt text](https://github.com/stevenxu9494/SportsStore/blob/master/Images/SportsStorePCHomeView.png?raw=true)
