@@ -6,5 +6,10 @@
 
 3. Start debugging
 
+## Preview for PC users
 
 ![alt text](https://github.com/stevenxu9494/SportsStore/blob/master/Images/SportsStorePCHomeView.png?raw=true)
+
+## Preview for Mobile users
+
+![alt text](https://github.com/stevenxu9494/SportsStore/blob/master/Images/SportsStoreMOHomeView.png?raw=true)
