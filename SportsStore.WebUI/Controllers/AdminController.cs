@@ -4,6 +4,7 @@ using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 namespace SportsStore.WebUI.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductRepository repository;
