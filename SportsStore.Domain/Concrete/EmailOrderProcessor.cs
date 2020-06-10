@@ -40,7 +40,7 @@ namespace SportsStore.Domain.Concrete
                     smtpClient.DeliveryMethod
                     = SmtpDeliveryMethod.SpecifiedPickupDirectory;
                     smtpClient.PickupDirectoryLocation = emailSettings.FileLocation;
-                    smtpClient.EnableSsl = false;
+                    smtpClient.EnableSsl = true;
                 }
                 StringBuilder body = new StringBuilder()
                 .AppendLine("A new order has been submitted")

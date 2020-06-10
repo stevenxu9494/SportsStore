@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.Sql/servers/mvcfivesportsstore-db/databases/EFDbContext",
+      "type": "mssql.azure",
+      "connectionId": "mvcfivesportsstore-db",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
